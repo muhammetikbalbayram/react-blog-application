@@ -27,7 +27,7 @@ app.put('/api/articles/:name/upvote', (req, res) => {
     if (article) {
         article.upvotes++
         res.send(`The "${name}" article has ${article.upvotes} upvotes!!`)
-    }else {
+    } else {
         res.send("That article doesnt exist")
     }
 });
@@ -37,9 +37,9 @@ app.post('/api/articles/:name/comments', (req, res) => {
     const { name } = req.params
     const article = articlesInfo.find(a => a.name === name)
     if (article) {
-        article.comments.push({postedBy,text})
+        article.comments.push({ postedBy, text })
         res.send(article)
-    }else {
+    } else {
         res.send("That article doesnt exist")
     }
 });
