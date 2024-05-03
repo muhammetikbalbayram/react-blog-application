@@ -104,3 +104,6 @@ nav a:hover {
 .not-found {
   text-align: center;
 }
+.upvote-button {
+  margin-right: 7px;
+}
