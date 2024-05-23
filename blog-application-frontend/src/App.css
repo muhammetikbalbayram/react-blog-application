@@ -95,7 +95,22 @@ nav a:hover {
   display: inline-block;
   margin-right: 16px;
 }
-
+.login-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-input {
+  margin-bottom: 8px;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+}
+.error {
+  font-size: 10px;
+  color: red;
+}
 .comment {
   border-bottom: 2px solid black;
   padding: 16px;
